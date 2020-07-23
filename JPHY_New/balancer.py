@@ -126,15 +126,6 @@ def get_g(jj):
         datafile.write(", %d\n"%W)
     return
 
-def text():
-    global base, k , W, g, Wa ,jj
-    for jj in range(1000000):
-        jj +=1
-        con_end()
-        con_f()
-        get_g()
-    return
-
 if __name__=='__main__':
     GPIO.setmode(GPIO.BCM)
 
